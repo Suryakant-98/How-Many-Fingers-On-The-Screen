@@ -17,9 +17,10 @@
 <body>
     <h1>Keep Your Finger's On The Screen</h1>
     <script>
-        document.addEventListener('touchstart', function(e) {
-            console.log(e.touches.length)
-        })
+      function countTouches(event) {
+  var x = event.touches.length;
+  document.getElementById("demo").innerHTML = x;
+}
     </script>
 </body>
 </html>
